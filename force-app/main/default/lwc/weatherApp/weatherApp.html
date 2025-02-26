@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Weather App 🌤️" icon-name="utility:world">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Enter City" value={cityName} onchange={handleInputChange}></lightning-input>
+            <lightning-button label="Get Weather" onclick={fetchWeather} class="slds-m-top_small"></lightning-button>
+        </div>
+        
+        <template if:true={weatherData}>
+            <div class="slds-m-around_medium slds-text-align_center">
+                <p class="slds-text-heading_medium">{weatherData.name}, {weatherData.sys.country}</p>
+                <p class="slds-text-heading_large">{weatherData.main.temp}°C</p>
+                <p>{weatherData.weather.description}</p>
+                <img src={weatherIcon} alt="Weather Icon" />
+                <p>Humidity: {weatherData.main.humidity}%</p>
+            </div>
+        </template>
+        
+        <template if:true={error}>
+            <p class="slds-text-color_error slds-m-around_medium">{error}</p>
+        </template>
+    </lightning-card>
+</template>

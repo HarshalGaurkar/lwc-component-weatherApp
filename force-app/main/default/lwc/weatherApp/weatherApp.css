@@ -1,0 +1,14 @@
+.fetch-btn {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Weather container styling */
+.weather-container {
+    border: 1px solid #d8dde6;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background: white;
+    text-align: center;
+}
