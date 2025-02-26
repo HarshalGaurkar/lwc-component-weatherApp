@@ -1,5 +1,9 @@
 # 🌤️ LWC Weather App  
 
+## 🎥 Component Demo
+https://github.com/user-attachments/assets/cc63cf2c-9fd1-4614-8c04-018c5754432f
+
+
 ## 📖 Overview  
 LWC Weather App is a **Lightning Web Component (LWC)** that integrates with the **OpenWeather API** to fetch and display real-time weather data for any city. It provides **current temperature, weather conditions, humidity, and a weather icon** to give users instant weather updates within Salesforce.  
 
